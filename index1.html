@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="INDEX1.CSS">
+    <title>NOORZAI</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">NOORZAI</a></div>
+           <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+
+            <!-- <input type="text" placeholder="Search" class="search">
+            <button class="search1">Search</button> -->
+           
+           </ul>
+           <a href="#" class="action-btn ">Get started</a>
+          <div class="toggle-btn"> <img src="images (2).jpeg" style="width: 20px;height: 20px;" alt="btn-logo"></div>
+        </div> 
+        <div class="dropdown-menu">
+           
+            <li><a href="#">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <i class=""></i>
+           <li> <a href="#" class="action-btn ">Get started</a></li>
+             
+        </div>
+    </header>
+     
+
+    <section id="hero">
+        <h1> WELCOME </h1>
+        <p>Welcome to noorzai website</p> 
+        <p> Here You Find Every Thing Soon </p>
+    </section>
+
+    <script>
+        const toggleBtn=document.querySelector('.toggle-btn');
+        const toggleBtnIcon=document.querySelector('.toggle-btn i');
+        const dropdownMenu=document.querySelector('.dropdown-menu');
+
+        toggleBtn.onclick=function(){
+            dropdownMenu.classList.toggle('open');
+            const isOpen=dropdownMenu.classList.contains('open');
+            toggleBtnIcon.classList=isOpen ? 'fa-solid fa-xmark' : 'fa-solid fabars';
+        }
+    </script>
+    </div>
+    <div class="main">
+        <div class="navbar">
+            <div class="logo"><a href="#">NOORZAI</a></div>
+           <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+           </ul>
+        </div>
+
+            <!-- <input type="text" placeholder="Search" class="search">
+            <button class="search1">Search</button> -->
+           
+           </ul>
+        <!-- <h2><a href="About">Welcome About Section </a></h2> -->
+          <h2>Welcome About Section </h2>
+
+    </div>
+</body>
+</html>
